@@ -4,5 +4,8 @@ pandas
 numpy
 jupyter
 ipykernel
+scikit-learn
+xgboost
+Flask
 
 -e .
