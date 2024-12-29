@@ -71,7 +71,7 @@ class DataTransformation:
             target_column="price"
             numerical_columns=["year","kms_driven"]
 
-            input_feature_train_df = train_df.drop("price", axis=1)
+            input_feature_train_df = train_df[["year", "kms_driven", "name", "company", "fuel_type"]]
             target_feature_train_df=train_df["price"]
 
             input_feature_test_df=test_df.drop("price", axis=1)
